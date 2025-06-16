@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.justify-heading {
+  text-align: justify;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.text-section p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #007acc;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.note {
+  margin-top: 30px;
+  background-color: #fff8dc;
+  border-left: 4px solid orange;
+  padding: 15px;
+}

@@ -1,0 +1,19 @@
+/* Outer box (the card) */
+.card {
+  width: 300px;
+  margin: 40px auto; /* margin: spacing outside the border */
+  padding: 20px;      /* padding: space inside the border */
+  border: 5px solid #333; /* border: edge around the box */
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Content area (used to visually show padding) */
+.content {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border: 1px dashed #00796b;
+}

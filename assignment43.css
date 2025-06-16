@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.crab {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  background: crimson;
+  border-radius: 30px;
+  animation: crabWalk 3s ease-in-out infinite;
+}
+
+/* Claws */
+.claw {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: red;
+  border-radius: 50%;
+  top: -15px;
+}
+
+.claw.left {
+  left: -20px;
+  transform: rotate(-30deg);
+}
+
+.claw.right {
+  right: -20px;
+  transform: rotate(30deg);
+}
+
+/* Animation: crab walks side to side with a little wiggle */
+@keyframes crabWalk {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(-40px) rotate(-5deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(40px) rotate(5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}

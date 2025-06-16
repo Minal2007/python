@@ -1,0 +1,21 @@
+/* Class selectors for student grades */
+.gradeA {
+  background-color:aqua;
+}
+
+.gradeB {
+  background-color: lightcoral;
+}
+
+/* Attribute selectors for input types */
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+  background-color: #f0f8ff;
+}
+
+input[type="email"] {
+  border: 2px solid green;
+  padding: 5px;
+  background-color: #f5fff0;
+}

@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+/* Container to keep layout tidy */
+.container {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+}
+
+/* Inline elements */
+.inline-box {
+  border: 2px dashed blue;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Block elements */
+.block-box {
+  border: 2px solid green;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Bonus: switch display behavior */
+.display-inline {
+  display: inline;
+  background-color: #e0f7fa;
+}
+
+.display-block {
+  display: block;
+  background-color: #fff3cd;
+  margin-top: 10px;
+}

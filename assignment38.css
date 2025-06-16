@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.mood-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: red; 
+}
+
+.mood-container::after {
+  content: "Mood: Energetic 🔥";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Medium screens */
+@media (min-width: 600px) {
+  .mood-container {
+    background-color: yellow;
+  }
+
+  .mood-container::after {
+    content: "Mood: Cheerful ☀️";
+    color: #333;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1024px) {
+  .mood-container {
+    background-color: #007BFF;
+  }
+
+  .mood-container::after {
+    content: "Mood: Calm 🌊";
+    color: #fff;
+  }
+}

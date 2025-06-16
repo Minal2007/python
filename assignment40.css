@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emoji {
+  font-size: 5rem;
+  animation: dance 1s infinite ease-in-out;
+  display: inline-block;
+}
+
+/* Keyframes for dancing: rotate + scale */
+@keyframes dance {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-20deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(20deg) scale(1);
+  }
+  75% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}

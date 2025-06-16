@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0f7fa;
+  margin: 0;
+}
+
+.robot {
+  position: relative;
+  width: 150px;
+  height: 300px;
+}
+
+.head {
+  width: 100px;
+  height: 100px;
+  background-color: #90a4ae;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.body {
+  width: 120px;
+  height: 140px;
+  background-color: #607d8b;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+.arm {
+  width: 30px;
+  height: 100px;
+  background-color: #455a64;
+  position: absolute;
+  top: 110px;
+}
+
+.left-arm {
+  left: -35px;
+}
+
+.right-arm {
+  right: -35px;
+}
+
+.leg {
+  width: 30px;
+  height: 90px;
+  background-color: #455a64;
+  position: absolute;
+  bottom: 0;
+}
+
+.left-leg {
+  left: 20px;
+}
+
+.right-leg {
+  right: 20px;
+}
+
+/* 🤖 Media Query: Robot transforms on small screens */
+@media (max-width: 600px) {
+  .robot {
+    transform: rotate(90deg) scale(0.8);
+    transition: transform 0.5s ease;
+  }
+
+  .left-arm {
+    transform: translateX(-40px) rotate(45deg);
+  }
+
+  .right-arm {
+    transform: translateX(40px) rotate(-45deg);
+  }
+
+  .left-leg {
+    transform: translateY(20px) rotate(-30deg);
+  }
+
+  .right-leg {
+    transform: translateY(20px) rotate(30deg);
+  }
+}

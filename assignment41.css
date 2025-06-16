@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to top, #222, #000);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+
+.launch-pad {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+
+.rocket {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Launch animation */
+.launch {
+  animation: rocketLaunch 1.2s ease-in forwards;
+}
+
+@keyframes rocketLaunch {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  40% {
+    transform: translateY(-150px) scale(1.1);
+  }
+  70% {
+    transform: translateY(-350px) scale(0.9);
+  }
+  100% {
+    transform: translateY(-500px) scale(0.5);
+    opacity: 0;
+  }
+}

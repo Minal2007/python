@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Common button styles */
+.btn {
+  border: 2px solid #333;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #e0e0e0;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Display variations */
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Note styling */
+.note {
+  background-color: #fff8dc;
+  border-left: 4px solid #ffa500;
+  padding: 15px;
+  margin-top: 20px;
+}

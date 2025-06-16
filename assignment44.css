@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disco-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-color: magenta;
+  animation: discoSpin 3s linear infinite;
+}
+
+/* Disco animation */
+@keyframes discoSpin {
+  0% {
+    transform: rotate(0deg);
+    background-color: magenta;
+  }
+  20% {
+    transform: rotate(72deg);
+    background-color: cyan;
+  }
+  40% {
+    transform: rotate(144deg);
+    background-color: lime;
+  }
+  60% {
+    transform: rotate(216deg);
+    background-color: yellow;
+  }
+  80% {
+    transform: rotate(288deg);
+    background-color: orange;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: magenta;
+  }
+}
